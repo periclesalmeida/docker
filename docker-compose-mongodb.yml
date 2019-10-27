@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mongo:
+    image: mongo
+    container_name: srv-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - $HOME/repositorio/volumes/mongo/data:/data/db
+      - $HOME/repositorio/volumes/mongo/backup:/data/
+

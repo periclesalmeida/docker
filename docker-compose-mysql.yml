@@ -1,0 +1,13 @@
+version: '2'
+services:
+    mysql:
+      image: mysql:5.7.25
+      ports:
+       - "3306:3306"
+      environment:
+           MYSQL_ROOT_PASSWORD: mysql
+      volumes:
+         - $HOME/repositorio/volumes/mysql:/var/lib/mysql
+         - $HOME/repositorio/backups:/volume
+      mem_limit: 1028m
+
