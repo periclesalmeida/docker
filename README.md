@@ -1,2 +1,2 @@
 # docker-compose
-Some docker-compose files for different services 
+Some docker-compose, Dockerfile and entrypoint.sh files for different services 
